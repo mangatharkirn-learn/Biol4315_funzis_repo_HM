@@ -7,6 +7,7 @@ date: "2026-09-10"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# AnnaMehrag
 
 ## R Markdown
 
@@ -27,3 +28,22 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# Code to Install vegan Package
+```{r, eval=FALSE}
+install.packages("vegan")
+```
+
+
+## Scatter plot of speed vs dist
+The [ggplot2](https://ggplot2.tidyverse.org) package is used to visualize a scatter plot of speed vs dist from the cars dataset.
+
+```{r, include=FALSE}
+install.packages("ggplot2", repos = "https://cloud.r-project.org")
+```
+
+```{r, echo=FALSE}
+library(ggplot2)
+ggplot(cars,aes(speed,dist)) + geom_point()
+```
+
