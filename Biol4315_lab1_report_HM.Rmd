@@ -47,3 +47,13 @@ library(ggplot2)
 ggplot(cars,aes(speed,dist)) + geom_point()
 ```
 
+```{bash eval=FALSE}
+docker pull nextgenusfs/funannotate
+```
+
+```{bash. eval=FALSE}
+conda create -n sequali-env python=3.11 -c conda-forge
+conda activate sequali-env
+conda install -c conda-forge -c bioconda sequali
+```
+
